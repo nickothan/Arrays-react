@@ -1,11 +1,12 @@
 import {Content} from "./styles";
-import EjerDes1 from "../EjerDes1";
+
+import EjerDes2 from "../EjerDes2";
 
 export default function Desestructuracion() {
     return (
         <Content>
             <h1>Desestructuracion</h1>
-            <EjerDes1 />
+            <EjerDes2 />
         </Content>
     );
 }
