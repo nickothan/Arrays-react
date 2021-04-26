@@ -1,4 +1,4 @@
-import Desestructuracion from "./components/Desestructuracion";
+import Desestructuracion from "./Views/Desestructuracion";
 
 function App() {
     return (

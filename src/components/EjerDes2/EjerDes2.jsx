@@ -23,14 +23,19 @@ let {
     ],
 } = metadata;
 
-console.log(englishTitle); // "Scratchpad"
-console.log(localeTitle); // "JavaScript-Umgebung"
+const Prueba = ({info}) => {
+    return <h4>{`el resultado es: ${englishTitle} `}</h4>;
+};
+
+//console.log(englishTitle); // "Scratchpad"
+//console.log(localeTitle); // "JavaScript-Umgebung"
 
 export default function EjerDes1() {
     return (
         <Content>
             <h2>Ejercicio 2</h2>
             <p>Desestructuración de arreglos y objetos anidados</p>
+            <Prueba info={metadata} />
         </Content>
     );
 }
