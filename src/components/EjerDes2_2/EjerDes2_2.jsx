@@ -18,17 +18,6 @@ const buses = {
     empresa: "buses blancos",
 };
 
-let {
-    id,
-    empresa,
-    nombre: nick,
-    indumentaria: [
-        {
-            asientos: [{filaA: fA, filaB: fB}],
-        },
-    ],
-} = buses;
-
 const FilaA = ({s}) => {
     return <li>{s}</li>;
 };
@@ -38,6 +27,19 @@ const FilaB = ({s}) => {
 };
 
 const Bus = ({b}) => {
+    let {
+        id,
+        empresa,
+        nombre: nick,
+        indumentaria: [
+            {
+                asientos: [{filaA: fA, filaB: fB}],
+            },
+        ],
+    } = b;
+
+    console.log("asientos fila A", fA);
+
     return (
         <div className="bus">
             <h4>{`El bus denominado ${nick} con el id ${id}`}</h4>
@@ -59,7 +61,6 @@ const Bus = ({b}) => {
         </div>
     );
 };
-console.log("asientos fila A", fA);
 
 export default function EjerDes2_2() {
     return (

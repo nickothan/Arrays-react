@@ -1,5 +1,7 @@
 import {Content} from "./styles";
 
+import EjerDes3_1 from "../EjerDes3_1";
+
 const people = [
     {
         name: "Mike Smith",
@@ -40,9 +42,18 @@ export default function EjerDes3() {
     return (
         <Content>
             <h2>Ejercicio 3</h2>
+            <br />
             <p>Iteración "for...of" y desestructuración</p>
 
+            <br />
             <User info={people} />
+
+            <div className="practica">
+                <br />
+                <h3>Practica</h3>
+
+                <EjerDes3_1 />
+            </div>
         </Content>
     );
 }
