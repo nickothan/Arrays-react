@@ -1,4 +1,6 @@
 import {Content} from "./styles";
+import EjerDes2_1 from "../EjerDes2_1";
+import EjerDes2_2 from "../EjerDes2_2";
 
 const metadata = {
     title: "Scratchpad",
@@ -23,8 +25,8 @@ let {
     ],
 } = metadata;
 
-const Prueba = ({info}) => {
-    return <h4>{`el resultado es: ${englishTitle} `}</h4>;
+const Datos = ({info}) => {
+    return <p>{`el resultado es: ${englishTitle} `}</p>;
 };
 
 //console.log(englishTitle); // "Scratchpad"
@@ -35,7 +37,12 @@ export default function EjerDes1() {
         <Content>
             <h2>Ejercicio 2</h2>
             <p>Desestructuración de arreglos y objetos anidados</p>
-            <Prueba info={metadata} />
+            <Datos info={metadata} />
+            <div className="practicando">
+                <h3>Practicando!</h3>
+                <EjerDes2_1 />
+                <EjerDes2_2 />
+            </div>
         </Content>
     );
 }
