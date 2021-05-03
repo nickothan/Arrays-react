@@ -1,6 +1,8 @@
 import {Content} from "./styles";
 
 import EjerDes3_1 from "../EjerDes3_1";
+import EjerDes3_2 from "../EjerDes3_2";
+import EjerDes3_3 from "../EjerDes3_3";
 
 const people = [
     {
@@ -53,6 +55,8 @@ export default function EjerDes3() {
                 <h3>Practica</h3>
 
                 <EjerDes3_1 />
+                <EjerDes3_2 />
+                <EjerDes3_3 />
             </div>
         </Content>
     );

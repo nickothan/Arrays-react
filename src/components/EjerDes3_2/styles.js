@@ -3,44 +3,38 @@ import styled from "styled-components";
 export const Content = styled.div`
     background-color: salmon;
     padding: 20px;
+    margin: 20px 0;
 
-    ul {
+    .ulCarros {
         display: flex;
+        flex-flow: wrap;
         justify-content: space-evenly;
 
-        .estudiante {
-            width: 280px;
+        .carros {
+            display: grid;
+
+            width: 300px;
+            margin: 5px;
             padding: 10px;
-            background-color: royalblue;
-            color: white;
+            background-color: red;
             list-style: none;
             text-align: center;
 
             border-radius: 15px;
 
             ul {
-                display: flex;
-                justify-content: space-evenly;
-
                 li {
-                    width: 100px;
-                    padding: 5px;
+                    margin: 5px;
                     background-color: salmon;
-                    color: white;
                     list-style: none;
-                    text-align: center;
                     border-radius: 5px;
+                }
+                li:hover {
+                    background-color: blue;
+                    color: white;
                     cursor: pointer;
                 }
-
-                li:hover {
-                    background-color: red;
-                }
             }
-        }
-
-        .estudiante:hover {
-            background-color: blue;
         }
     }
 `;

@@ -130,7 +130,8 @@ export default function EjerDes3_1() {
             <h3> Estudiantes </h3>
 
             <Estudiante info={estudiantes} />
-
+            <br />
+            <br />
             <Estudiantes estudiantes={estudiantes} />
         </Content>
     );
